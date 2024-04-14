@@ -21,6 +21,8 @@ public class HomeWork {
     public void cssLocator(){
 
         WebElement button = wd.findElement(By.tagName("button"));
+        WebElement input = wd.findElement(By.tagName("input"));
+        WebElement a = wd.findElement(By.tagName("a"));
         wd.close();
     }
 
