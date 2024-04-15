@@ -5,6 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class HomeWork {
 
     WebDriver wd;
@@ -25,12 +27,15 @@ public class HomeWork {
         WebElement a = wd.findElement(By.tagName("a"));
         WebElement div = wd.findElement(By.tagName("div"));
         WebElement form = wd.findElement(By.tagName("form"));
+        WebElement h1 = wd.findElement(By.tagName("h1"));
+        List<WebElement> list = wd.findElements(By.cssSelector("a"));
 
         WebElement button1 = wd.findElement(By.cssSelector("button"));
         WebElement input1 = wd.findElement(By.cssSelector("input"));
         WebElement a1 = wd.findElement(By.cssSelector("a"));
         WebElement div1 = wd.findElement(By.cssSelector("div"));
         WebElement form1 = wd.findElement(By.cssSelector("form"));
+        WebElement h1_2 = wd.findElement(By.cssSelector("form"));
 
         wd.close();
     }
