@@ -23,6 +23,15 @@ public class HomeWork {
         WebElement button = wd.findElement(By.tagName("button"));
         WebElement input = wd.findElement(By.tagName("input"));
         WebElement a = wd.findElement(By.tagName("a"));
+        WebElement div = wd.findElement(By.tagName("div"));
+        WebElement form = wd.findElement(By.tagName("form"));
+
+        WebElement button1 = wd.findElement(By.cssSelector("button"));
+        WebElement input1 = wd.findElement(By.cssSelector("input"));
+        WebElement a1 = wd.findElement(By.cssSelector("a"));
+        WebElement div1 = wd.findElement(By.cssSelector("div"));
+        WebElement form1 = wd.findElement(By.cssSelector("form"));
+
         wd.close();
     }
 
